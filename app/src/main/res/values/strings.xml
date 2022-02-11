@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AopLogin</string>
+    <string name="login_btn_desc">获取用户信息</string>
+</resources>

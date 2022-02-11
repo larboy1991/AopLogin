@@ -1,0 +1,3 @@
+rootProject.name = "AopLogin"
+include ':app'
+include ':library_login'
