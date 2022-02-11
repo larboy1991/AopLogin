@@ -1,6 +1,6 @@
 ## 一、配置
 
-[![](https://jitpack.io/v/larboy1991/AopPermission.svg)](https://jitpack.io/#larboy1991/AopPermission)
+[![](https://jitpack.io/v/larboy1991/AopLogin.svg)](https://jitpack.io/#larboy1991/AopLogin)
 
 	allprojects {
 		repositories {
@@ -14,7 +14,7 @@
 	}
 
 	dependencies {
-			 implementation 'com.github.larboy1991:AopLogin:0.0.2'
+			 implementation 'com.github.larboy1991:AopLogin:0.0.1'
 	}
 
 
