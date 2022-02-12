@@ -14,7 +14,7 @@
 	}
 
 	dependencies {
-			 implementation 'com.github.larboy1991:AopLogin:0.0.1'
+		implementation 'com.github.larboy1991:AopLogin:0.0.1'
 	}
 
 
