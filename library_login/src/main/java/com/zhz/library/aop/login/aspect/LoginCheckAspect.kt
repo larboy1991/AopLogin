@@ -52,7 +52,7 @@ class LoginCheckAspect {
                         if (iLogin.isLogin()) {
                             //进入到新的方法里面去
                             if (loginCheckFilter.loginSuccessCallback) {
-                                invokeLoginSuccessCallback(objectInfo, loginCheckFilter.resultCode)
+                                invokeLoginSuccessCallback(objectInfo, loginCheckFilter.requestCode)
                             } else { //回到方法提里面去
                                 joinPoint.proceed()
                             }
@@ -62,7 +62,7 @@ class LoginCheckAspect {
                     }
 
                     override fun loginFailed() {
-                        invokeLoginFailedCallback(objectInfo,loginCheckFilter.resultCode)
+                        invokeLoginFailedCallback(objectInfo,loginCheckFilter.requestCode)
                         LoginInnerHelper.removeLoginStatusCallBack()
                     }
                 })

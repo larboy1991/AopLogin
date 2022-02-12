@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @LoginCheckFilter(resultCode = 11101)
+    @LoginCheckFilter(requestCode = 11101)
     private fun checkLogin() {
         Log.d("zhuanghz", "checkLogin: ~~~~~~~~~~")
         Toast.makeText(this, "获取用户信息成功", Toast.LENGTH_SHORT).show()
