@@ -1,6 +1,5 @@
 package com.zhz.library.aop.login.controller
 
-import android.content.Context
 import com.zhz.library.aop.login.interf.ILogin
 import com.zhz.library.aop.login.interf.ILoginStatusCallback
 
@@ -19,8 +18,6 @@ internal object LoginInnerHelper {
 
 
     private var mLoginStatusCallback: ILoginStatusCallback? = null
-
-    var application: Context? = null
 
     var iLogin: ILogin? = null
 
@@ -74,4 +71,14 @@ internal object LoginInnerHelper {
         mLoginStatusCallback?.loginFailed()
     }
 
+    /**
+     * 更新用户的退出状态,清空用户信息，并根据根据用户的type，跳转对应页面
+     * <p>
+     * Author: zhuanghongzhan
+     * Date: 2022-02-12
+     */
+    fun updateUserLogoutStatus(type: Int) {
+        iLogin?.clearLoginStatus()
+        iLogin?.login(type)
+    }
 }
